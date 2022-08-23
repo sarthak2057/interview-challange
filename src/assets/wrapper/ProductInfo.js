@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
   margin: 0 4.5rem;
   .title {
+    padding-bottom: 2rem;
     position: relative;
     .add-to-wish {
       width: 20%;
@@ -12,15 +13,15 @@ const Wrapper = styled.div`
       border-radius: 1rem;
       bottom: 0;
       right: 0;
-      color: #c43b6c;
-      background-color: #f8e7ed;
+      color: var(--font-hightlight-secondary);
+      background-color: var(--wishlist-bg);
       transition: 0.5s ease-in;
     }
     .add-to-wish:hover {
       transform: scale(1.1);
       cursor: pointer;
-      color: white;
-      background-color: #c43b6c;
+      color: var(--bg-primary);
+      background-color: var(--font-highlight-secondary);
     }
   }
   h1 {
@@ -101,7 +102,7 @@ const Wrapper = styled.div`
     .input-value {
       margin-top: 0.5rem;
       background-color: #f2f2f2;
-      width: 20rem;
+      width: 22rem;
       display: flex;
       font-size: 1.5rem;
       padding: 0.5rem;

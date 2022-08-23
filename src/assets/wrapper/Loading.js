@@ -16,8 +16,8 @@ align-items: center;
   margin-top: 12rem;
   width: 150px;
   height: 150px;
-  border: 10px solid #EF9D22; /* Light grey */
-  border-top: 10px solid #EF9D22; /* Black */
+  border: 10px solid var(--font-highlight-primary); /* Light grey */
+  border-top: 10px solid var(--font-highlight-primary); /* Black */
   border-radius: 50%;
   animation: spinner 1.5s linear infinite;
 }

@@ -1,16 +1,19 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 :root{
-  bg-primary:#ffffff;
-  bg-secondary:#000000;
-  font-primary:#000;
-  font-secondary:#fff;
-  font-highlight-primary:#EF9D22;
-  font-highlight-secondary:#c43b6c;
-  wishlist-bg:#f8e7ed;
-  value-bg:#fdf4e6;
+  --bg-primary:#ffffff;
+  --bg-secondary:#000000;
+  --font-primary:#000;
+  --font-secondary:#fff;
+  --font-highlight-primary:#EF9D22;
+  --font-highlight-secondary:#c43b6c;
+  --wishlist-bg:#f8e7ed;
+  --value-bg:#fdf4e6;
 }
 
 *{
   padding: 0;
   margin:0;
   box-sizing: border-box;
+  font-family: 'Questrial',sans-serif;
 }
