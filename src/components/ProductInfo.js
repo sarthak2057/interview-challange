@@ -3,7 +3,7 @@ import {AiOutlineHeart} from 'react-icons/ai'
 import {BiSearchAlt2} from 'react-icons/bi'
 import Wrapper from '../assets/wrapper/ProductInfo';
 import CartInfo from './CartInfo';
-import { useDispatch } from 'react-redux';
+import { useDispatch,useSelector } from 'react-redux';
 import {changeImage} from '../feature/image/imageSlice';
 import { PapasanChair } from '../data/iteminfo.js';
 import img1 from '../assets/img/color/Rectangle 84.png';
@@ -14,6 +14,7 @@ import img5 from '../assets/img/color/Rectangle 83.png';
 
 const ProductInfo = ({product}) => {
   const dispatch = useDispatch();
+  const count = useSelector((state) => state.cart.count);
   const {offer} = PapasanChair;
   return (
     <Wrapper>
@@ -40,7 +41,7 @@ const ProductInfo = ({product}) => {
       <div className="pricing-info">
         <span className="mrp">$ 120</span>
         <div className="pricing-cart">
-          <h2 className='sp'>$ {product.price}</h2>
+          <h2 className='sp'>$ {product.price*count}</h2>
           <CartInfo />
         </div>
         <div className="offer-info">

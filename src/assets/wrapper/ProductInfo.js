@@ -59,6 +59,7 @@ const Wrapper = styled.div`
     .pricing-cart {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       align-items: center;
 
       .sp {

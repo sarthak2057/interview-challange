@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  margin-left: 9rem;
   .product-quantity {
     display: flex;
     flex-direction: row;
@@ -38,7 +37,7 @@ const Wrapper = styled.div`
   }
 
   @media (max-width:1280px) {
-    margin-left: 9rem;
+
     .product-quantity{
       .add-cart{
         font-size: 0.8rem;
@@ -46,9 +45,7 @@ const Wrapper = styled.div`
       }
     }
   }
-  @media (max-width:750px){
-    margin-left : 5rem;
-  }
+  
 `;
 
 export default Wrapper;
